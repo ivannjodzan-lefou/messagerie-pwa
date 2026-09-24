@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f0f2f5;
+}
+
+/* En-tête */
+.chat-header {
+    background-color: #075e54;
+    color: white;
+    padding: 12px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-header h2 {
+    font-size: 1.2rem;
+}
+
+.status {
+    font-size: 0.75rem;
+    padding: 2px 8px;
+    border-radius: 12px;
+    display: inline-block;
+    margin-top: 3px;
+}
+
+.status.online {
+    background-color: #25d366;
+    color: white;
+}
+
+.status.offline {
+    background-color: #757575;
+    color: white;
+}
+
+#clear-btn {
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: white;
+}
+
+/* Zone des messages */
+.chat-box {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message {
+    max-width: 75%;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    word-wrap: break-word;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.message .time {
+    font-size: 0.65rem;
+    color: #888;
+    align-self: flex-end;
+    margin-top: 4px;
+}
+
+.message.system {
+    align-self: center;
+    background-color: #e1f5fe;
+    color: #0288d1;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.message.sent {
+    align-self: flex-end;
+    background-color: #dcf8c6;
+    color: #303030;
+}
+
+.message.received {
+    align-self: flex-start;
+    background-color: #ffffff;
+    color: #303030;
+    border: 1px solid #e0e0e0;
+}
+
+/* Zone de saisie */
+.chat-input-area {
+    display: flex;
+    padding: 10px;
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
+}
+
+#message-input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    font-size: 1rem;
+}
+
+#send-btn {
+    margin-left: 10px;
+    padding: 0 18px;
+    background-color: #075e54;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#send-btn:active {
+    background-color: #128c7e;
+}

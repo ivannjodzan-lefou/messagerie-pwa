@@ -1,0 +1,21 @@
+{
+  "short_name": "Messagerie",
+  "name": "Ma Messagerie PWA",
+  "icons": [
+    {
+      "src": "https://via.placeholder.com/192",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://via.placeholder.com/512",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "./index.html",
+  "background_color": "#075e54",
+  "theme_color": "#075e54",
+  "display": "standalone",
+  "orientation": "portrait"
+}
